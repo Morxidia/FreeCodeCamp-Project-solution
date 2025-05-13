@@ -1,0 +1,257 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    height: 70px;  
+    width: 100%;  
+    position: fixed;
+    background-color:#c34848;
+    color: linen;
+    align-items: center;
+    border-bottom: 2px solid rgba(0,0,0,0.4);
+    z-index: 10;
+}
+
+.heading h2{
+    padding-left: 2rem;
+    font-weight: 500;
+    margin-right: auto;
+} 
+
+.navbar{
+    display: flex;
+    height: 100%;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: linen;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s ease-out ;
+}
+
+.navbar a:hover{
+    background-color: #2B2E4A;
+}
+
+.project-image{
+    width: 20vw;
+}
+
+.quote::before{
+    content: '" '; 
+}
+.quote::after{
+    content: ' "'; 
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-color: #53354A;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    color: linen;
+    border-bottom: 2px solid rgba(69, 41, 93, 0.7);
+}
+
+#welcome-section h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+#welcome-section h3{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+.profile{
+    width: 40%;
+    text-align: center;
+    margin-bottom: 6vh;
+}
+
+.quote{
+    border-top: 2px solid rgba(232, 69, 69,0.7); 
+    border-bottom: 2px solid rgba(232, 69, 69,0.7); 
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+#projects{
+    background-color:rgb(64, 66, 90);
+    width: 100%;
+    padding-top: 70px;
+    color: linen;
+    justify-items: center;
+    padding-bottom: 100px;
+}
+
+#projects h2{
+    margin: 3rem 0 15vh;
+    font-size: 3rem;
+    padding-bottom: 10px ;
+    border-bottom: 2px solid linen;
+}
+
+
+.project-tile{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.project{
+    margin: 0 10% 100px;
+    background-color: rgb(33, 35, 50);
+    justify-items: center;
+    border: 4px solid rgb(33, 35, 50);
+    transition: border 0.3s ease-out, transform 0.4s ease-out;
+}
+
+.project-image{
+    width: 100%;
+    height: calc(100% - 6.8rem);
+    object-fit: cover;
+}
+
+.project-title{
+    font-size: 1.5rem;
+    padding: 2rem 0.5rem;
+}
+
+.project .code{
+    color:rgb(33, 35, 50);
+    transition: color 0.3s ease-out;
+}
+
+.project:hover{
+    border: 4px solid #c34848;
+    transform: scale(1.2);
+}
+
+.project:hover .code{
+    color:#d74b4b;
+}
+
+.github-btn{
+    display: inline-block;
+    position: relative;
+    background-color: rgb(33, 35, 50);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.github-btn:hover{
+    background-color: #E84545;
+    transform: translateY(10px);
+}
+
+#contact{
+    height: 70vh;
+    background-color: #2B2E4A;
+    color: linen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.last-word{
+    margin-bottom: 5vh;
+}
+
+.last-word h3{
+    font-size: 3rem;
+}
+
+.last-word span{
+    opacity: 0.5;
+}
+
+.social-media{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.social-media a{
+    font-size: 3rem;
+    color: linen;
+    margin: 0 auto;
+    transition: color 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.social-media a:hover{
+    color:#E84545;
+    transform: translateY(10px);
+}
+
+footer{
+    border-top: 4px solid rgba(232, 69, 69,0.7);
+    height: 10vh;
+    background-color: #2B2E4A;
+    color: linen;
+    display: flex;
+    text-align: center;
+}
+
+footer p{
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.footer p a{
+    text-decoration: none;
+    color: linen;
+}
+
+@media only screen and (max-width: 750px){
+    #welcome-section{
+        height: auto;
+        padding: 20px;
+        padding-top: 100px;
+    }
+    .profile{
+        width: 70%;
+    }
+    .quote{
+        text-align: center;
+    }
+    .heading h2{
+        width: 30%;
+        padding-left: 2rem;
+        font-weight: 500;
+    } 
+    .project-tile{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .project-image{
+        width: 100%;
+    }
+
+}

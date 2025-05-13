@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Game survey</title>  
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+    </head>
+    <body>
+      <div>
+          <div class="title">
+            <h1>Game Survey</h1>
+            <p class="title">Helping us know more about gamers</p>
+          </div >
+          <form id="survey-form" class="survey-form">
+            <div class="form-group">
+                <label for="username">Username : <input id="username" type="text" class="box" placeholder="Enter you name here..." required /></label>
+                <label for="age">Age <span class="clue">(opsional)</span> : <input id="age"  class="box" type="date"/></label>
+                <label for="email">Email: <input id="email" class="box" type="email"required/></label>
+            </div>
+            <div clas="form-group">
+              <p>What best describes you current activity</p>
+              <select id="activity" name="activity" required=" ">
+                <option disable=" " selected=" " value=" ">Select one...</option>
+                <option value="working">Working</option>
+                <option value="student">Student</option>
+                <option value="jobless">Job less</option>
+                <option value="preferno">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group" id="user-motiv">
+              <p>What you reason to play game</p>
+              <label for="motiv"><input name="user-motiv" value="Job" class="input-radio" type="radio">Job <span class="clue">(Pro-gamer, Streamer, ETC)</span></label>
+              <label for="motiv"><input name="user-motiv" value="Hobby" class="input-radio" type="radio">Hobby</label>
+              <label for="motiv"><input name="user-motiv" value="Entertainment" class="input-radio" type="radio">Entertainment</label>
+              <label for="motiv"><input name="user-motiv" value="Other" class="input-radio" type="radio">Other</label>
+            </div>
+            <div class="form-group">
+              <p>What Genre of game do you like? <span class="clue">(pick all genre you like)</span></p>
+              <label><input name="game-genre" value="Action" class="checkbox" type="checkbox">Action</label>
+              <label><input name="game-genre" value="RPG" class="checkbox" type="checkbox">RPG</label>
+              <label><input name="game-genre" value="Racing" class="checkbox" type="checkbox">Racing</label>
+              <label><input name="game-genre" value="Simulation" class="checkbox" type="checkbox">Simulation</label>
+              <label><input name="game-genre" value="Adventure" class="checkbox" type="checkbox">Adventure</label>
+              <label><input name="game-genre" value="First-Person-Shooter" class="checkbox" type="checkbox">First Person Shooter</label>
+              <label><input name="game-genre" value="Sandbox" class="checkbox" type="checkbox">Sandbox</label>
+              <label><input name="game-genre" value="Survival" class="checkbox" type="checkbox">Survival</label>
+              <label><input name="game-genre" value="Visual-novel" class="checkbox" type="checkbox">Visual novel</label>
+              <label><input name="game-genre" value="Strategy" class="checkbox" type="checkbox">Strategy</label>
+              <label><input name="game-genre" value="Puzzle" class="checkbox" type="checkbox">Puzzle</label>
+            </div>
+            <div class="form-group">
+              <p>What the most thing you like from game?</p>
+              <label for="Preferences-aspect"><input name="Preferences-aspect" value="Gameplay" type="radio" class="input-radio"/>Gameplay</label>
+              <label for="Preferences-aspect"><input name="Preferences-aspect" value="Visual" type="radio" class="input-radio"/>Visual</label>
+              <label for="Preferences-aspect"><input name="Preferences-aspect" value="Story" type="radio" class="input-radio"/>Story</label>
+            </div>
+            <div class="form-group">
+              <label for="experience">Tell me about your favorite time while playing game <span class="clue">(opsional)</span></label>
+              <textarea id="experience" name="experience" rows="3" cols="30" placeholder="tell us here...."></textarea>
+            </div>
+            <div>
+              <input type="submit" name="submit" id="submit" value="Submit">
+            </div>
+          </form>
+      </div>
+    </body>
+</html>

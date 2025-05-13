@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Coffee Subscription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+  <div class="page-wrapper">
+    <header class="heading">
+      <div class="head-a">
+        <img src="source/Logo.png" class="logo-img" alt="logo">
+      </div> 
+      <div></div>
+      <div></div>
+      <nav class="head-b">
+        <a href="#form">Offers</a>
+        <a href="#brewing">Brewing</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+    </header>
+    <div class="container">
+      <section class="form" id="form">
+        <h2>Speciality coffee on your hand</h2>
+        <h2>Roast with carefull</h2>
+        <form action="submit">
+          <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
+          <input id="submit" type="submit" value="Get Started" class="submit">
+        </form>
+      </section>
+      <section class="offers">
+        <div class="grid">
+          <div class="icon">
+            <img src="source/coffee-beans.png"  class="icon">
+          </div>
+          <div class="desc">
+            <h2>Premium Green beans</h2>
+            <p>Our company only use a great quality green beans a grade
+              one or speciality grade</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="icon">
+            <img src="source/trending-topic.png"  class="icon">
+          </div>
+          <div class="desc">
+            <h2>Consistant Roasting</h2>
+            <p>Our coffee always roast in batch and always produce a high
+              precision and even roasting level
+            </p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="icon">
+            <img src="source/quality.png"  class="icon">
+          </div>
+          <div class="desc">
+            <h2>World Wide Shipping</h2>
+            <p>We deliver anywhere at anytime around the world</p>
+          </div>
+        </div>
+      </section>
+      <section class="brewing-vid" id="brewing">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1oB1oDrDkHM?rel=0&start=1"></iframe>
+      </section>
+      <section id="pricing">
+        <div class="product" id="BrewTier">
+          <div class="level">
+            <h2>BrewTier</h2>
+            <p>Casual coffee enjoyers</p>
+          </div>
+          <h3 class="price">30$</h3>
+          <ol class="benefit">
+            <li>two coffee bag</li>
+            <li>medium roast manual brew </li>
+            <li>medium espresso roast</li>
+            <li>1 grade coffee</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="CafeVibe">
+          <div class="level">
+            <h2>CafeVibe</h2>
+            <p>Bring Cafeshop to your home</p>
+          </div>
+          <h3 class="price">45$</h3>
+          <ol  class="benefit">
+            <li>3 coffee bag</li>
+            <li>light roast manual brew </li>
+            <li>medium roast manual brew </li>
+            <li>medium espresso roast</li>
+            <li>added speciality grade coffee</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="GrindLevel">
+          <div class="level">
+            <h2>GrindLevel</h2>
+            <p>Coffee Nerd</p>
+          </div>
+          <h3 class="price">70$</h3>
+          <ol class="benefit">
+            <li>3 coffee bag</li>
+            <li>medium espresso roast</li>
+            <li>medium roast manual brew </li>
+            <li>ligh roast manual brew </li>
+            <li>Speciality coffee</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="submit">Privacy</a></li>
+          <li><a href="submit">Terms</a></li>
+          <li><a href="submit">Contact</a></li>
+        </ul>
+        <span>Copyright 2016, Original Trombones</span>
+      </footer>
+    </div>
+  </div>
+  </body>
+</html>

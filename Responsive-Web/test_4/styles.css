@@ -1,0 +1,264 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #af7070;
+  font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  z-index: 1;
+}
+
+.logo-img {
+  width: 25vw;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #eee;
+  padding-top: 3rem;
+}
+
+nav{
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav > a{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+a:hover{
+  color: #ae6427;
+  transition: color 1s;
+}
+
+.form {
+  display: flex;
+  height: 200px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+}
+
+.form form{
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=email]{
+  height: 30px;
+  width: 300px;
+}
+
+input[type=submit]{
+  height: 50px;
+  width: 150px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: large;
+  font-weight: 600;
+  background-color: #f5d095;
+  border: none;
+}
+
+input[type=submit]:hover{
+  background-color: rgb(135, 72, 49);
+  color: linen;
+  transition: background-color 1s;
+  transition: color 1.2s;
+}
+
+.form > h2{
+  text-decoration: none;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+.form h2:first-child{
+  margin-bottom: 0;
+}
+
+.offers{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.offers h2{
+  margin-bottom: 10px;
+}
+
+.grid{
+  display: flex;
+  margin-bottom: 40px;
+  margin: 50px 8rem 50px;
+}
+
+.grid .desc{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+.icon{
+  width: 80px;
+}
+
+.brewing-vid{
+  display: flex;
+  justify-content: center;
+}
+
+#pricing{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+
+
+.product{
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 250px;
+  height: 350px;
+  position: relative;
+}
+
+@media (max-width: 800px){
+  .logo-img {
+    width: 40vw;
+  }
+  nav > a{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  #pricing{
+    flex-direction: column;
+  }
+  .product{
+    max-width: 300px;
+    width: 100%;
+    max-height: 350px;
+    margin-bottom: 1rem;
+  }
+}
+.level{
+  background-color: rgb(255, 234, 214);
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.level p{
+  font-size: 0.8em;
+  padding-top: 3px;
+}
+
+.benefit{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 40%;
+}
+
+.product ol > li{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 5px;
+}
+
+.btn{
+  bottom: 0;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px black solid;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #ffcba9;
+}
+
+.price{
+  position: relative;
+  font-size: 1.5rem;
+  height: 2rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: center;
+}
+
+footer{
+  width: 100%;
+  margin-top: 4rem;
+  padding: 20px;
+  background-color: rgb(253, 235, 217);
+}
+
+footer ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 10px;
+  padding-bottom: 5px;
+}
+
+footer ul > li{
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+
+footer span{
+  display: flex;
+  justify-content: flex-end;
+  color: #7a7a7a;
+  padding-right: 18px ;
+}

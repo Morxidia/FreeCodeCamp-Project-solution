@@ -1,0 +1,128 @@
+body {
+    /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+    font-family: Arial, Helvetica, sans-serif,
+      'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 0;
+  }
+
+main{
+    width: 100%;
+    align-content: center;
+    margin: auto auto;
+}
+
+.title-img{
+    width: 100%;
+    filter: brightness(0.7);
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.title-text{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+p#title{
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-top: -50px;
+    color: rgba(255, 255, 255, 0.652);
+}
+
+.list-title{
+    align-items: center;
+}
+
+.list-title > h2{
+    font-size: 4rem;
+    font-weight: 500;
+    margin:70px 0 -10px;
+}
+
+.list-title > span{
+    font-size: 2rem;
+    color: rgb(138, 78, 78);
+}
+
+ul{
+    list-style: none;
+}
+
+.tribute-1{
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    margin:50px auto 50px;
+    font-size: 1.2rem;
+    width: 85%;
+}
+
+.tribute-1 > p{
+    width: 50%;
+    ;
+}
+.tribute-1 > .trib-img{
+    width: 50%;
+    display: block;
+  height: auto;
+  margin:auto auto;
+}
+.tribute-1 > ul{
+    margin:20px 50px 0;
+}
+
+#image{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.epilogue{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.after-word{
+    font-size: 1.6rem;
+    font-weight: 100;
+    background-color: rgba(255, 230, 190, 0.971);
+}
+
+.epilogue > p{
+    margin: 10px;
+    padding: 20px 0 10px;
+}
+
+
+footer{
+    height: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(source/Rei\ Ayanami\ .jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+footer > p{
+    font-size: 1,2rem;
+    color: white;
+    padding-top: 15px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: orangered;
+}

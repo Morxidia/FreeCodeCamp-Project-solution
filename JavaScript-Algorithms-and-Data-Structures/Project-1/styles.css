@@ -1,0 +1,47 @@
+body{
+  background:fixed;
+  background-color: rgba(62,101,80,0.4);
+}
+
+#head{
+  background-color: white;
+  width: 50%;
+  height: 5rem;
+  text-align: center;
+  margin: 20px auto 50px;
+}
+
+#head h1{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#userinput{
+  background-color: white;
+  width: 35%;
+  height: 5rem;
+  text-align: center;
+  align-items: center;
+  margin: 20px auto 20px;
+
+}
+
+#userinput input{
+  margin: 10px auto 10px auto;
+}
+
+#userinput button{
+  display: block;
+  margin: 0 auto 0;
+}
+
+#trivia{
+  background-color: white;
+  width: 35%;
+  height: 10rem;
+  text-align: center;
+  align-items: center;
+  margin: 10px auto 10px auto;
+}

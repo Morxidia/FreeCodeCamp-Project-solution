@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic Web Technical</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  </body>
+    <nav id="navbar">
+      <header>Web Tutorial</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Introduction">Introduction</a>
+        </li> 
+        <li>
+          <a class="nav-link" href="#Head">Head</a>
+        </li> 
+        <li>
+          <a class="nav-link" href="#Body">Body</a>
+        </li> 
+        <li>
+          <a class="nav-link" href="#Header">Header</a>
+        </li> 
+        <li>
+          <a class="nav-link" href="#Profile">Profile</a>
+        </li> 
+        <li>
+          <a class="nav-link" href="#Styles">Styles</a>
+        </li> 
+        <li>
+          <a class="nav-link" href="#Header_style">Header style</a>
+        </li> 
+        <li>
+          <a class="nav-link" href="#Profile_style">Profile style</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>HTML stands for HyperText Markup Language. It is the 
+            standard language used to create and structure 
+            content on the web.</p>
+          <ul>
+            <li><p>HTML is a markup language, not a programming language, 
+              meaning it annotates text to define how it is 
+              structured and displayed by web browsers.
+              </p>
+            </li>
+            <li><p>It forms the building blocks of all websites and 
+              is complemented by CSS for style and JavaScript for 
+              interactivity.
+              </p>
+            </li>
+          </ul>
+          <p>In a nutshell, HTML is all about organizing and displaying 
+            information on a webpage. We can think of it as the bones or 
+            structure of a webpage
+          </p>
+          <p>Here we gonna make some simple profile web page by using HTML and CSS</p>
+        </article>
+      </section>
+      <section class="main-section" id="Head">
+        <header>Head</header>
+        <P>Before we go to Head we're gonna make basic structure of html</p>
+        <pre>
+          <code>
+            &lt!DOCTYPE html>
+            &lthtml lang="en">
+            &lt/html>
+          </code>
+        </pre>
+        <ul>
+          <li>
+            <p>&lt!DOCTYPE html&gt : Declares the document type 
+                and version of HTML (HTML5 in this case).</p>
+          </li>
+          <li>
+            <p>&lthtml&gt : he root element that wraps all 
+          the content on the page.</p>
+          </li>
+        </ul>
+        <p>Now we need to add head to out html to add title element, by simply 
+          add head we now can add meta to our html, meta is term for metadata
+          metadata contain the description of our program.
+        </P>
+        <p>&lthead>: Contains meta-information about the page, such as the title, character set, and links to stylesheets.</p>
+        <p>Now we add title of your profile web by adding title element, and we also need
+          to add charset attribute with meta element, we also need to add link to style
+          your page using CSS (we gonna talk about this later)</p>
+        <pre>
+          <code>
+            &lt!DOCTYPE html>
+            &lthtml lang="en">
+            &lthead>
+              &lttitle>My Profile Web&lt/title>
+              &ltmeta charset="UTF-8">
+              &ltlink rel="stylesheet" href="styles.css"/>
+            &lt/head>
+            &lt/html>
+          </code>
+        </pre>
+        <p>Your html should look like that</p>
+      </section>
+      <section class="main-section" id="Body">
+        <header>Body</header>
+        <p>The &ltbody> tag is one of the most important elements in an HTML document. 
+          It defines the main content of the webpage, and everything that is visible 
+          to users when they visit your site. The content inside the 
+          &ltbody> tag includes text, images, links, videos, forms, 
+          and more.</p>
+        <p>In body element we need to add &ltdiv> element to make a container of your
+          profile picture, profile background, and you edcucation history.
+          within your profile picture &ltdiv> we need to add &ltimg> element 
+          with attribute "src" to add your photo using url or web link.
+          <br>Now your program will look like this
+        </p>
+        <pre>
+          <code>
+            &lt!DOCTYPE html>
+            &lthtml lang="en">
+            &lthead>
+              &lttitle>My Profile Web&lt/title>
+              &ltmeta charset="UTF-8">
+              &ltlink rel="stylesheet" href="styles.css"/>
+            &lt/head>
+            &ltbody>
+              &ltdiv>&ltimg src="your profile picture link">
+              &lt/div>
+              &ltdiv>This is the profile background&lt/div>
+              &ltdiv>This is the edcucation history&lt/div>
+            &lt/body>
+            &lt/html>
+          </code>
+        </pre>
+      </section>
+      <section class="main-section" id="Header">
+        <header>Header</header>
+        <p>In HTML, the &ltheader> tag and heading tags (&lth1> to &lth6>) serve 
+          different but complementary purposes.</p>
+        <p>The &ltheader> tag is a semantic element used to define the introductory or
+           navigational content of a webpage or a section of a webpage. 
+           It typically contains elements like logos, navigation menus, or headings.</p>
+        <p>Headings are used to define the titles and subtitles of sections in a 
+          webpage. They range from &lth1> (the most important) to &lth6> 
+          (the least important).</p>
+        <p>Now that we have understand the use of each we gonna add those element to
+           our profile web<br>your html now will look like this</p>
+        <pre>
+          <code>
+            &lt!DOCTYPE html>
+            &lthtml lang="en">
+            &lthead>
+              &lttitle>My Profile Web&lt/title>
+              &ltmeta charset="UTF-8">
+              &ltlink rel="stylesheet" href="styles.css"/>
+            &lt/head>
+            &ltbody>
+              &ltdiv>
+                &ltimg src="your profile picture link">
+                &lth1>"your name"&lt/h1>
+              &lt/div>
+              &ltdiv>
+                &ltheader>Profile&lt/header>
+              &lt/div>
+              &ltdiv>
+                &ltheader>Education&lt/header>
+              &lt/div>
+            &lt/body>
+            &lt/html>
+          </code>
+        </pre>
+      </section>
+      <section class="main-section" id="Profile">
+        <header>Profile</header>
+        <p>Now that you have the structure of your web, we need to add a profile and 
+          your education history, we gonna use paragraph and unordered list element
+           from html</p>
+        <ul>
+          <li>
+          <p>&ltp> tag is used to define a paragraph of text. It is one 
+            of the most commonly used elements in HTML for displaying 
+            blocks of text.</p>
+          </li>
+          <li>
+          <p>&ltul> tag is used to create an unordered list, which is a list 
+            of items that are typically displayed with bullet points.</p>
+          </li>
+          <li>
+          <p>&ltli> tag is used to define an item in a list. It is used 
+            inside &ltul> (unordered lists) or &ltol> (ordered lists).</p>
+          </li>
+        </ul>
+        <p>Now we need to add your background profile to the second div element using
+           &ltp> element, and after that we also add your Education history using &ltul>
+           & &ltli> element.<br>Your program should look like this</p>
+        <pre>
+          <code>
+            &lt!DOCTYPE html>
+            &lthtml lang="en">
+            &lthead>
+              &lttitle >My Profile Web&lt/title>
+              &ltmeta charset="UTF-8">
+              &ltlink rel="stylesheet" href="styles.css"/>
+            &lt/head>
+            &ltbody>
+              &ltdiv>
+                &ltimg src="your profile picture link">
+                &lth1>"your name"&lt/h1>
+              &lt/div>
+              &ltdiv>
+                &ltdiv>
+                  &ltheader>Profile&lt/header>
+                  &ltp>Background profile&lt/p>
+                  &ltp>Your interest&lt/p>
+                &lt/div>
+                &ltdiv>
+                  &ltheader>Education&lt/header>
+                  &ltlu>
+                    &ltli>Last education history&lt/li>
+                    &ltli>second education history&lt/li>
+                    &ltli>third education history&lt/li>
+                  &lt/lu>
+                &lt/div>
+              &lt/div>
+            &lt/body>
+            &lt/html>
+          </code>
+        </pre>
+      </section>
+      <section class="main-section" id="Styles">
+        <header>Styles</header>
+        <p>Remember the link to styles.css that we have added before in head element 
+          now we gonna make a styles.css in same directory as your html file</p>
+        <p>After you make the file we now ready to style the page, first we gonna introduce you to 
+          selector in CSS there's 3 type of selector that we gonna use.</p>
+        <p>element selector targets HTML elements based on their tag name (e.g., &ltp>, &lth1>, div>).</p>
+        <pre>
+          <code>
+              element {
+              property: value;
+              }
+          </code>
+        </pre>
+        <p>class selector targets elements that have a specific class attribute. 
+          Classes are reusable and can be applied to multiple elements. Starts with a . (dot) 
+          followed by the class name.</p>
+        <pre>
+          <code>
+              .class-name {
+                property: value;
+              }
+          </code>
+        </pre>  
+        <p>ID selector targets a single element with a specific id attribute. IDs 
+          are unique and should only be used once per page. Starts with a # (hash) 
+          followed by the ID name.</p>
+        <pre>
+          <code>
+              #id-name {
+                property: value;
+              }
+          </code>
+        </pre>  
+        <p>Now after we know we can use selector to select spesific html element,
+          lets put those into our html file so we can start styling our page.<br>
+          Your html file should like this.</p>
+        <pre>
+          <code>
+            &lt!DOCTYPE html>
+            &lthtml lang="en">
+            &lthead>
+              &lttitle >My Profile Web&lt/title>
+              &ltmeta charset="UTF-8">
+              &ltlink rel="stylesheet" href="styles.css"/>
+            &lt/head>
+            &ltbody>
+              &ltdiv class="profile-header">
+                &ltimg class="profile-img" src="your profile picture link">
+                &lth1>"your name"&lt/h1>
+              &lt/div>
+              &ltdiv class="profile-container">
+                &ltdiv class="profile">
+                  &ltheader>Profile&lt/header>
+                  &ltp class="profile-text">Background profile&lt/p>
+                  &ltp>Your interest&lt/p>
+                &lt/div>
+                &ltdiv>
+                  &ltheader>Education&lt/header>
+                  &ltlu>
+                    &ltli>Last education history&lt/li>
+                    &ltli>second education history&lt/li>
+                    &ltli>third education history&lt/li>
+                  &lt/lu>
+                &lt/div>
+              &lt/div>
+            &lt/body>
+            &lt/html>
+          </code>
+        </pre>
+      </section>
+      <section class="main-section" id="Header_style">
+        <header>Header Style</header>
+        <p>Look at our page, we just have an photo on the right, and also some photo 
+          might be to big for the page, we need to make a limit on how big our profile picture 
+          should be, and also we need to center our text, and add top and bottom padding</p>
+        <p>To do that we need to add 2 selector that select our profile-header class, and 
+          profile-picture class and after that we can add corresponding attribute and value</p> 
+        <pre>
+          <code>
+            .profile-picture{
+              background-color: blanchedalmond;
+              text-align: center;
+              padding-top:20px;
+              padding-bottom:10px;
+            }
+
+            .profile-img{
+                width: 300px;
+                height: 300px;
+            }
+          </code>
+        </pre>
+        <p>and before we continue we also need to style our font to, in html there's a lot 
+          of font family, create a element selector to select our body and then give 
+          a font-family</p>
+        <pre>
+          <code>
+            body{
+              font-family: 'Courier New', Courier, monospace;
+            }
+          </code>
+        </pre>
+      </section>
+      <section class="main-section" id="Profile_style">
+        <header>Profile style</header>
+        <p>Now we get to main page of our website, we want to make the 
+          background profile and education history to be side by side, 
+          to do that we first need to make the display attribute value set to 
+          flex in the profile class, after that we need to make a space between 
+          profile text and window border on the right side of the screen, we need to 
+          add padding. after that we want to justify our text by using text-align 
+          and set it's value to justify</p>
+        <pre>
+          <code>
+            .profile{
+              display: flex;
+              margin-bottom: 20px;
+            }
+            .background-profile{
+              max-width: 55%;
+              padding: 0 20px 0 20px;
+            }
+
+            .profile-text{
+              text-align: justify;
+              text-justify: inter-word;
+              font-size: 1.1em;
+            }
+
+            .education{
+              max-width: 35%;
+              font-weight: 100;
+            }
+          </code>
+        </pre>
+        <p>See that I add max-width in each div, it's initialize that the max width 
+          of background profile are fill the 55% of the page, and so the education history 
+          can have a space to get side by side with the profile background</p>
+      </section>
+      <section>
+        <p>Now finnaly we have a profle page. thanks and goodbye</p>
+      </section>
+    </main>
+  </body>
+</html> 
