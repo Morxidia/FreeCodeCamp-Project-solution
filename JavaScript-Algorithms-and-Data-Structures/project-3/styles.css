@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Workbench", sans-serif;
+  font-optical-sizing: auto;
+  --button: #FFFFFF;
+  --button-background: #6b6b6b;
+  --screen-font: rgb(35, 46, 18);
+}
+
+#pager-container{
+  width: 80%;
+  aspect-ratio: 1.9/1;
+  background-color: #282828;
+  margin: 4% auto 0;
+  clip-path: polygon(10% 0%, 100% 0, 100% 80%, 90% 100%, 0 100%, 0% 20%);
+  border-radius: 5vw;
+  border: 1px solid transparent;
+}
+
+#pager-screen{
+  background-color: #8EBB3A;
+  height: 65%;
+  width: 90%;
+  margin: 4% auto 0;
+  clip-path: polygon(10% 0%, 100% 0, 100% 80%,100% 100%, 0% 100% , 0% 30%);
+  border-radius: 2vw;
+  border: 10px solid transparent;
+}
+
+#user-input{
+  display: block;
+  margin: 2.5% auto 0;
+  margin-left: 6%;
+  width: 90%;
+  height: 25%;
+  font-size: 5vw;
+  color:  var(--screen-font) ;
+  background-color: #8EBB3A;
+  border: none;
+  border-bottom: 0.3vw solid black;
+}
+
+#user-input:focus {
+  outline: none;
+}
+
+#results-div{
+  display: block;
+  color:  var(--screen-font) ;
+  margin: 2% auto 0;
+  margin-left: 6%;
+  width: 90%;
+  height: 55%;
+  font-size: 3vw;
+  overflow: scroll;
+}
+
+#btn-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5%;
+  width: 75%;
+  height: 13%;
+  margin: 3.5% auto 0;
+  /* background-color: white; */
+}
+
+#check-btn{
+  font-size: 3vw;
+  color: var(--button);
+  background-color: var(--button-background);
+  border-radius: 1rem;
+}
+
+#scroll-down-btn{
+  font-size: 3vw;
+  color: var(--button);
+  background-color: var(--button-background);
+  border-radius: 1rem;
+
+}
+
+#scroll-up-btn{
+  font-size: 3vw;
+  color: var(--button);
+  background-color: var(--button-background);
+  border-radius: 1rem;
+
+}
+
+#clear-btn{
+  font-size: 3vw;
+  color: var(--button);
+  background-color: var(--button-background);
+  border-radius: 1rem;
+}

@@ -1,0 +1,153 @@
+:root {
+  --white-100: #ffff;
+  --gray-00: #BEBEBE;
+  --gray-50: #4B4B4B;
+  --gray-70: #292929;
+  --red-10: #CD5C5C;
+  --red-20: #B22222;
+  --brown-10: #DEB887;
+  --brown-30: #F4A460;
+  --brown-50: #CD853F;
+  --brown-70: #D2691E;
+  --brown-90: #A0522D;
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Libertinus Mono", monospace;
+  background-color: black;
+}
+
+main{
+  margin: 10px 10% 0 ;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+}
+
+#converter{
+  align-items: center;
+}
+
+.input-container{
+  width: 100%;
+  background-color: var(--gray-50);
+  border: 5px solid  rgb(153, 114, 102, 0.5);
+  box-shadow: 0px 0px 0px 8px rgba(var(--red-20),0.3);
+  margin-top: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+.input-section > h1{
+  color: var(--white-100);
+  margin: 2rem auto 1rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#convert-btn{
+  cursor: pointer;
+  margin: 1.2rem 25% 1rem;
+  width: 50%;
+  border: 2px solid rgb(153, 114, 102);
+  padding: 0.8rem;
+  border-radius: 5px;
+  background-color: rgba(153, 114, 102, 0.5);
+  font-size: 1.5rem;
+  color: white;
+  font: "Libertinus Mono", monospace;
+}
+
+.input-number{
+  margin: 1rem 15% 0.2rem;
+  width : 70%;
+  height: 5rem;
+  font-size: 2.5rem;
+  background-color: rgba(157, 106, 106, 0.5);
+  border: 1px solid var(--red-10);
+  color: white;
+  padding: 6px 12px;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.output{
+  width: 100%;
+  min-height: 100px;
+  border: 2px solid rgb(153, 114, 102);
+  background-color: rgba(153, 114, 102, 0.5);
+  color: white;
+  margin: 2rem auto 2rem;
+  padding: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#romantable h1{
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  text-align: center;
+  margin: 2rem auto 1rem; 
+  color: white;
+}
+
+.numbertable{
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+td{
+  padding: 5px;
+}
+
+
+#romantable table{
+  border-collapse: collapse;
+}
+
+#romantable td,th{
+  border-collapse: collapse;
+  background-color: var(--gray-50);
+  border: 5px solid  rgb(153, 114, 102, 0.5);
+  color:white;
+}
+
+.alert{
+  width: 100%;
+  border: 2px solid red;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+  margin: 2rem auto 2rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 860px) {
+  main{
+  margin: 10px 10% 0 ;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 5rem;
+}
+}
