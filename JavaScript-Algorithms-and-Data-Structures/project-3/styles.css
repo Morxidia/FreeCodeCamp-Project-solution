@@ -6,7 +6,8 @@
   font-optical-sizing: auto;
   --button: #FFFFFF;
   --button-background: #6b6b6b;
-  --screen-font: rgb(35, 46, 18);
+  --screen-font: rgb(35, 46, 18); 
+  scroll-behavior: smooth;
 }
 
 #pager-container{

@@ -13,18 +13,18 @@ const updateResult = (condition) => {
   el.id = `result-${resultNumber}`;
   result.prepend(el);
   const text = condition? `Valid US number: ${numberInput.value}`: `Invalid US number: ${numberInput.value}`;
-  el.textContent = text;
-  // let i = 0;
-  // let speed = 50;
-  // const addText = () =>{
-  //   if(i < text.length){
-  //     el.textContent += text.charAt(i);
-  //     i++;
-  //     setTimeout(addText, speed);
-  //   }
-  // }
-  // addText();
-  // resultNumber++;
+  // el.textContent = text;
+  let i = 0;
+  let speed = 50;
+  const addText = () =>{
+    if(i < text.length){
+      el.textContent += text.charAt(i);
+      i++;
+      setTimeout(addText, speed);
+    }
+  }
+  addText();
+  resultNumber++;
 }
 
 const validateNumber = () => {
