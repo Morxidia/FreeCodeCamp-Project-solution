@@ -52,8 +52,17 @@ class QuoteBox extends React.Component {
   }
 
   update() {
+    let timeDelay = 150;
+    $(".quote-text").animate({ opacity: 0 }, timeDelay, () => {
+        $(".quote-text").animate({ opacity: 1 }, timeDelay);
+        $("#text").text('loading....');
+      });
+    $(".quote-author").animate({ opacity: 0 }, timeDelay, () => {
+        $(".quote-author").animate({ opacity: 1 }, timeDelay);
+        $("#author").text('.....');
+      });
     this.getQuote().then(() => {
-      const timeDelay = 500;
+      timeDelay = 500;
 
       $(".quote-text").animate({ opacity: 0 }, timeDelay, () => {
         $(".quote-text").animate({ opacity: 1 }, timeDelay);
