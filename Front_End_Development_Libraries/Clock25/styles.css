@@ -1,0 +1,89 @@
+:root{
+  --screen-color: #a5cd39
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #19183B;
+  font-family: "Wallpoet", sans-serif;;
+}
+
+#timer-container{
+  width: 500px;
+  text-align: center;
+  margin: 5% auto;
+  background-color: rgb(73, 73, 73);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px black;
+  i:hover{
+  cursor: pointer;
+  }
+}
+
+#time-control-wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#session-wrapper,
+#break-wrapper{
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+#session-controls-container,
+#break-controls-container{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+#break-controls-container,
+#session-controls-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  width: 60%;
+  margin: 0 auto;
+  i{
+    font-size: 3rem;
+  }
+  i:hover{
+    cursor: pointer;
+  }
+  p{
+    width: 5rem;
+  }
+}
+
+#control-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 50%;
+  margin: 0 auto;
+  font-size: 50px;
+}
+
+#timer-screen-container{
+  margin: 10px auto;
+  width: 50%;
+  #time-left{
+    font-size: 3.5rem;
+  }
+}
+
+.screen{
+  background-color: var(--screen-color);
+  font-family: "Wallpoet", sans-serif;
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+}
+
