@@ -1,6 +1,5 @@
 const colors = [
   '#FFBF69',
-  '#CBF3F0',
   '#2EC4B6',
   '#E71D36',
   '#FF9F1C',

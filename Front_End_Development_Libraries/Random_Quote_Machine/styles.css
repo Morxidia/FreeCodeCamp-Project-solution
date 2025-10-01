@@ -17,8 +17,8 @@ div {
 }
 
 body {
-    background-color: #a7cce8;
-    color: #a7cce8;
+    background-color: #5A82A6;
+    color: #5A82A6;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     display: flex;
@@ -68,7 +68,7 @@ body {
 }
 
 .button {
-    background-color: #a7cce8;
+    background-color: #5A82A6;
     color: white;
     border-radius: 5px;
 }
