@@ -219,7 +219,7 @@ const Break = (props) => {
       <h5 id="break-label">Break Length</h5>
       <div id="break-controls-container">
         <i class="bi bi-caret-down-fill" id="break-decrement" onClick={props.subtBreakTime}/>
-        <p className="screen" id="break-length">{props.breakTime}</p>
+        <p className="screen" id="break-length">{props.breakTime < 10? `0${props.breakTime}`: `${props.breakTime}`}</p>
         <i class="bi bi-caret-up-fill" id="break-increment" onClick={props.addBreakTime}/>
       </div>
     </div>
@@ -232,7 +232,7 @@ const Session = (props) => {
       <h5 id="session-label">Session Length</h5>
       <div id="session-controls-container">
         <i class="bi bi-caret-down-fill" id="session-decrement" onClick={props.subtMainTime}/>
-        <p className="screen" id="session-length">{props.mainTime}</p>
+        <p className="screen" id="session-length">{props.mainTime < 10? `0${props.mainTime}`: `${props.mainTime}`}</p>
         <i class="bi bi-caret-up-fill" id="session-increment" onClick={props.addMainTime}/>
       </div>
     </div>
