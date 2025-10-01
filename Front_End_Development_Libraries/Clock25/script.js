@@ -258,7 +258,7 @@ const Controls = (props) => {
   return(
     <div id="control-wrapper">
       <div id="start_stop" onClick={props.startStop}>
-        <i className={props.timestart? 'bi bi-play-fill' : 'bi bi-pause-fill'} id="start-icon"/>
+        <i className={props.timestart? 'bi bi-pause-fill' : 'bi bi-play-fill'} id="start-icon"/>
       </div>
       <div id="reset" onClick={props.reset}>
         <i class="bi bi-bootstrap-reboot"/>
